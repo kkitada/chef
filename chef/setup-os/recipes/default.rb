@@ -64,12 +64,12 @@ template "/etc/fstab" do
 end
 
 # deny ipv6
-file "/opt/chef/chef-repo/cookbooks/setup-os/templates/backup/dist.conf.bk" do
-  content IO.read( "/etc/modprobe.d/dist.conf" )
-end
-template "/etc/modprobe.d/dist.conf" do
-  source "dist.conf.erb"
-end
+#file "/opt/chef/chef-repo/cookbooks/setup-os/templates/backup/dist.conf.bk" do
+#  content IO.read( "/etc/modprobe.d/dist.conf" )
+#end
+#template "/etc/modprobe.d/dist.conf" do
+#  source "dist.conf.erb"
+#end
 
 # cloud.cfg
 file "/opt/chef/chef-repo/cookbooks/setup-os/templates/backup/cloud.cfg.bk" do
